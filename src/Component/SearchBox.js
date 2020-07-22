@@ -4,7 +4,7 @@ import {InputGroup , FormControl , Button , Form } from 'react-bootstrap'
 export class SearchBox extends Component {
     render() {
         return (
-            <div>
+            <div style={{'width':'70%' , 'margin': '0 auto'}} >
             <Form.Label>search products</Form.Label>
             <InputGroup className="mb-3">
             <FormControl

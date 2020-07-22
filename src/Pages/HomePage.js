@@ -3,11 +3,11 @@ import {Jumbotron , Button , Image ,Card } from 'react-bootstrap'
 import Logo from '../Img/logos/android-chrome-512x512.png'
 export default function HomePage() {
     return (
-        <div style={{'display':'flex' , 'flexDirection':'column' ,'flexWrap':'wrap'}}>
-        <Jumbotron style={{'backgroundColor' : 'white' , 'padding' : "100px 20px" , 'position' : 'relative'}} >
-        <div className="container">
+        <div style={{'display':'flex' , 'flexDirection':'column' ,'flexWrap':'wrap' , 'marginLeft':'16%'}}>
+        <Jumbotron style={{'backgroundColor' : 'white' , 'padding' : "100px 20px" }} >
+        <div className="container" style={{ 'position' : 'relative'}}  >
             <div className="row" >
-                <div className="col-5" style={{left : '-8%' , 'width' :'auto'}}>
+                <div className="col-5" style={{  'width' :'auto'}}>
                     <h1>Diana</h1>
                     <h3>Fashion Intelligent System</h3> 
                     <p>
