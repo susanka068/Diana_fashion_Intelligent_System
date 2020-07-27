@@ -3,6 +3,7 @@ import HomePage from './Pages/HomePage'
 import Header from './Component/Header'
 import { BrowserRouter as Router , Switch, Route } from 'react-router-dom'
 import Products from './Pages/Products'
+import Extract  from './Pages/Extract'
 function App() {
   return (
     <Router>
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route path="/products">
           <Products/>
+        </Route>
+        <Route path="/extract" >
+          <Extract/>
         </Route>
       </Switch>
     </div>

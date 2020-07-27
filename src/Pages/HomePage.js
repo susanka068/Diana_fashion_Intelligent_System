@@ -1,6 +1,7 @@
 import React from 'react'
 import {Jumbotron , Button , Image ,Card } from 'react-bootstrap'
 import Logo from '../Img/logos/android-chrome-512x512.png'
+import {Link} from 'react-router-dom'
 export default function HomePage() {
     return (
         <div style={{'display':'flex' , 'flexDirection':'column' ,'flexWrap':'wrap' , 'marginLeft':'16%'}}>
@@ -33,7 +34,7 @@ export default function HomePage() {
             Some quick example text to build on the card title and make up the bulk of
             the card's content.
             </Card.Text>
-            <Button variant="primary">Extract</Button>
+            <Link><Button variant="primary">Extract</Button></Link>
         </Card.Body>
         </Card>
         </div>

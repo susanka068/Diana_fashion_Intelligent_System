@@ -11,7 +11,7 @@ export default function HomePage() {
     <Nav className="mr-auto" style={{'float' : 'right'}}>
       <Link to="/"><Nav.Link href="/">Home</Nav.Link></Link>
       <Link to='/products'><Nav.Link href="/products">Explore Products</Nav.Link></Link>
-      <Nav.Link href="#">Extract</Nav.Link>
+      <Link to='/extract' ><Nav.Link href="/extract">Extract</Nav.Link></Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
