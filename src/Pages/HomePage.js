@@ -20,7 +20,7 @@ export default function HomePage() {
                     </p>
                 </div>
                 <div class="col-7">
-                    <Image src={Logo} style={{'height':'400px' , 'width': '400px' , position: 'relative'  }} />
+                    <Image src={Logo} style={{'height':'auto' , 'width': '400px' , position: 'relative'  }} />
                 </div>
             </div>
         </div>
