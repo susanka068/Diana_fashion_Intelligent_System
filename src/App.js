@@ -5,6 +5,7 @@ import { BrowserRouter as Router , Switch, Route } from 'react-router-dom'
 import Products from './Pages/Products'
 import Extract  from './Pages/Extract'
 import ProductDetails from './Pages/ProductDetails'
+import Footer from './Component/Footer'
 function App() {
   return (
     <Router>
@@ -17,7 +18,10 @@ function App() {
         <Route path="/products" component={Products}/>
         <Route path="/extract" component={Extract} />
         <Route path="/details" component={ProductDetails} />
-      </Switch>
+      </Switch> 
+    <footer>
+      <Footer/>
+    </footer>
     </div>
     </Router>
   );
