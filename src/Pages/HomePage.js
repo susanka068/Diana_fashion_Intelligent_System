@@ -22,7 +22,7 @@ export default function HomePage() {
                     
             </div>
             <div className="col-lg-7">
-                <Image src={Logo} style={{"width": "auto" , height:"auto"}}/>
+                <Image src={Logo} style={{"maxWidth": "100%" , width:"auto" , height:"auto"}}/>
             </div>
         </div>
     </div>
@@ -31,26 +31,26 @@ export default function HomePage() {
             <div className='container' >
                 <div className="row" >
                     <div className="col-lg-6" >
-                    <Card style={{ width: '18rem' }}>
+                   <Card style={{ maxWidth: '18rem' }}>
                     <Card.Body>
                         <Card.Title>GO EXTRACTING</Card.Title>
                         <Card.Text>
                         Some quick example text to build on the card title and make up the bulk of
                         the card's content.
                         </Card.Text>
-                        <Link><Button variant="primary">Extract</Button></Link>
+                        <Link to="/extract"><Button className="btn btn-primary mybtn" variant="primary">EXTRACT</Button></Link>
                     </Card.Body>
                     </Card>
                     </div>
                     <div className="col-lg-6" >
-                    <Card style={{ width: '18rem' }}>
+                    <Card style={{ maxWidth: '18rem' , margin:'5px' }}>
                     <Card.Body>
                         <Card.Title>GO EXPLORING</Card.Title>
                         <Card.Text>
                         Some quick example text to build on the card title and make up the bulk of
                         the card's content.
                         </Card.Text>
-                        <Button variant="primary">EXPLORE</Button>
+                        <Link><Button className="btn btn-primary mybtn" variant="primary">EXPLORE</Button></Link>
                     </Card.Body>
                     </Card>
                     </div>
