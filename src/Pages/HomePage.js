@@ -13,10 +13,9 @@ export default function HomePage() {
         <div className="row">
             <div className="col-lg-5">
             <h1>Diana</h1>
-                    <h3>Fashion Intelligent System</h3> 
+                    <h3>Designed to augment Fashion Designers</h3> 
                     <p>
-                        Diana is an Fashion Intelligent System for designers and retailers powered by modern tool of machine learning
-                        sjdkdsfnsfnsdjkdsbd  asnshsd sdhdsfbsd sbdsb sdnsb sdhsd  bjsfnbsd bsbv vsd bsdj sjdkd hjhe sdbjsd dsbsdf sbsd bjsfnb sdbsfb bsdbds dsbds 
+                    Diana uses natural language processing and image classification technologies to extract data from E-Portals. Using statistical analysis, it helps developers identify the crucial elements in Garment Designing. 
                     </p>
                     <Button className="btn btn-primary mybtn" variant="primary">Learn more</Button>
                     
@@ -38,7 +37,7 @@ export default function HomePage() {
                         Some quick example text to build on the card title and make up the bulk of
                         the card's content.
                         </Card.Text>
-                        <Link to="/products"><Button className="btn btn-primary mybtn" variant="primary">EXTRACT</Button></Link>
+                        <Link to="/products"><Button className="btn btn-primary mybtn" variant="primary">Check Items</Button></Link>
                     </Card.Body>
                     </Card>
                     </div>
@@ -50,7 +49,7 @@ export default function HomePage() {
                         Some quick example text to build on the card title and make up the bulk of
                         the card's content.
                         </Card.Text>
-                        <Link to="/analytics"><Button className="btn btn-primary mybtn" variant="primary">EXPLORE</Button></Link>
+                        <Link to="/analytics"><Button className="btn btn-primary mybtn" variant="primary">Analytics</Button></Link>
                     </Card.Body>
                     </Card>
                     </div>
