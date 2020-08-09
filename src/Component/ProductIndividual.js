@@ -1,23 +1,23 @@
 import React, { Component } from 'react'
-import {Card ,Button} from 'react-bootstrap'
-import {Link  } from 'react-router-dom'
+import {Card ,Button , Accordion} from 'react-bootstrap'
 export class ProductIndividual extends Component {
     render() {
+        const { title , image ,score } = this.props.data
         return (
-            <Card style={{ width: '18rem' , 'flex':'0 1 18rem' , 'margin' : '12px' , 'justifyContent' : 'space-between' }}>
-            <Card.Img variant="top" src={this.props.data.image} />
-            <Card.Body>
-            <Card.Title>{this.props.data.title}</Card.Title>
-                <Card.Text>
-                {
-                    this.props.data.details[0]   
-                }
-                </Card.Text>
-                <Link to={{pathname:"/details" ,
-                            dataProps: this.props.data
-                           }} ><Button variant="primary">details</Button></Link>
-            </Card.Body>
-            </Card> 
+            <Accordion>
+            <Card>
+                <Card.Header>
+                <Card.Img src={image} style={{height : 'auto' , width: '140px'}}  ></Card.Img>
+                <Card.Title>{title}</Card.Title>
+                <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                    <Button className="btn btn-primary mybtn" variant="primary">view details</Button>
+                </Accordion.Toggle>
+                </Card.Header>
+                <Accordion.Collapse eventKey="0">
+        <Card.Body>trendiness score : {score} </Card.Body>
+                </Accordion.Collapse>
+            </Card>
+            </Accordion>
         )
     }
 }

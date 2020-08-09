@@ -6,6 +6,7 @@ import Products from './Pages/Products'
 import Extract  from './Pages/Extract'
 import ProductDetails from './Pages/ProductDetails'
 import Footer from './Component/Footer'
+import Analytics from './Pages/Analytics'
 function App() {
   return (
     <Router>
@@ -18,6 +19,7 @@ function App() {
         <Route path="/products" component={Products}/>
         <Route path="/extract" component={Extract} />
         <Route path="/details" component={ProductDetails} />
+        <Route path="/analytics" component={Analytics} />
       </Switch> 
     <footer>
       <Footer/>

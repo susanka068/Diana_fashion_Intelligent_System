@@ -12,6 +12,7 @@ export default function HomePage() {
       <Link to="/"><Nav.Link href="/">Home</Nav.Link></Link>
       <Link to='/products'><Nav.Link href="/products">Explore Products</Nav.Link></Link>
       <Link to='/extract' ><Nav.Link href="/extract">Extract</Nav.Link></Link>
+      <Link to='/analytics' ><Nav.Link href="/analytics">Analytics</Nav.Link></Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>

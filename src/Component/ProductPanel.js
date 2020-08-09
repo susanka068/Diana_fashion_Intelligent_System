@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import ProductIndividual from './ProductIndividual';
-import NordStormData from '../data/nordstrom-t-shirt.json'
+import NordStormData from '../data/stage_4.json'
 export class ProductPanel extends Component {
     render() {
         //console.log(NordStormData)
         return (
-            <div style={{'display':'flex' , 'flexWrap':'wrap' , 'justifyContent':'center' }} >
+            <div >
             {
-                NordStormData.map(item => ( <ProductIndividual data={item} /> ))
+                NordStormData.items.map(item => ( <ProductIndividual data={item} /> ))
             }
             </div>
         )
