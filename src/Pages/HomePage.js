@@ -5,9 +5,7 @@ import {Link} from 'react-router-dom'
 import '../index.css';
 export default function HomePage() {
     return (
-        
         <React.Fragment>
-
 <section id="banner" style={{"padding" : "100px 20px"}}>
     <div className="container">
         <div className="row">
@@ -32,10 +30,9 @@ export default function HomePage() {
                     <div className="col-lg-6" >
                    <Card style={{ maxWidth: '18rem' }}>
                     <Card.Body>
-                        <Card.Title>Item List</Card.Title>
+                        <Card.Title>Itemlist</Card.Title>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                        List containing items sorted according to their score
                         </Card.Text>
                         <Link to="/products"><Button className="btn btn-primary mybtn" variant="primary">Check Items</Button></Link>
                     </Card.Body>
@@ -46,8 +43,7 @@ export default function HomePage() {
                     <Card.Body>
                         <Card.Title>Analytics</Card.Title>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                        Charts to aid designers
                         </Card.Text>
                         <Link to="/analytics"><Button className="btn btn-primary mybtn" variant="primary">Analytics</Button></Link>
                     </Card.Body>

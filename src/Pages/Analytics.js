@@ -29,7 +29,7 @@ export class Analytics extends Component {
     ['pleat',         null,       null,    null ,    null ,    null ,   null ,   null ,  null,    null ,     null ,   null,       null ,   null,      null,        null ,    null ,    null, null,     null,          null,           1   ,],
   ]}
   options={{
-    title: 'Element distrubution Chart',
+    title: 'Element distrubution',
     chartArea: { width: '50%' },
     isStacked: true,
     hAxis: {
@@ -51,11 +51,12 @@ export class Analytics extends Component {
   loader={<div>Loading Chart</div>}
   data={dataArray}
   options={{
+    title: 'Customer concerns' ,
     hAxis: {
-      title: 'Keywords',
+      title: 'Aspect',
     },
     vAxis: {
-      title: 'Apperance',
+      title: 'Count',
     },
   }}
   rootProps={{ 'data-testid': '1' }}
