@@ -25,6 +25,41 @@ export class Analytics extends Component {
   }}
   rootProps={{ 'data-testid': '1' }}
 />
+
+<Chart
+  width={'600px'}
+  height={'500px'}
+  chartType="BarChart"
+  loader={<div>Loading Chart</div>}
+  data={[
+    ['Atrributes', 'cotton', 'polyester','model','crewneck','v-neck','scooped', 'tee' , 'top' , 'jersey' , 'slub' , 'stretch' , 'lace' , 'ruffle' , 'graphic' ,  'short' , 'long' ,'crop','curved', 'tie dye' , 'garment-dyed' , 'pattern' ,],
+    ['fabric',         58,        26,       16,      null,     null,    null ,   null ,  null ,   null ,     null ,   null,       null ,   null ,     null,        null ,    null,    null,  null,     null,          null,         null   ,],
+    ['neckline',      null ,      null ,   null ,     43 ,      18 ,     4 ,     null ,  null ,   null ,     null ,   null ,      null ,   null ,     null,        null ,    null,    null,  null,     null,          null,         null   ,],
+    ['shirt',         null,       null,    null ,    null ,    null ,   null ,    60 ,    11 ,    null ,     null ,   null ,      null ,   null ,     null,        null ,    null,    null,  null,     null,          null,         null   ,],
+    ['Knit',          null,       null,    null ,    null ,    null ,   null ,   null ,  null,     11,        6,        2,        null ,   null ,     null,        null ,    null,    null,  null,     null,          null,         null   ,],
+    ['design',        null,       null,    null ,    null ,    null ,   null ,   null ,  null,    null ,     null ,   null,         6 ,      4 ,        4 ,        null ,    null,    null,  null,     null,          null,         null   ,],
+    ['sleeve',        null,       null,    null ,    null ,    null ,   null ,   null ,  null,    null ,     null ,   null,       null ,   null,      null,         63 ,       8 ,    null,  null,     null,          null,         null   ,],
+    ['length',        null,       null,    null ,    null ,    null ,   null ,   null ,  null,    null ,     null ,   null,       null ,   null,      null,        null ,    null ,    5,    null,     null,          null,         null   ,],
+    ['hem',           null,       null,    null ,    null ,    null ,   null ,   null ,  null,    null ,     null ,   null,       null ,   null,      null,        null ,    null ,    null,   4,      null,          null,         null   ,],
+    ['color',         null,       null,    null ,    null ,    null ,   null ,   null ,  null,    null ,     null ,   null,       null ,   null,      null,        null ,    null ,    null,   4,        2,             1,          null   ,],
+    ['pleat',         null,       null,    null ,    null ,    null ,   null ,   null ,  null,    null ,     null ,   null,       null ,   null,      null,        null ,    null ,    null,   4,        2,             1,           1   ,],
+  ]}
+  options={{
+    title: 'Population of Largest U.S. Cities',
+    chartArea: { width: '50%' },
+    isStacked: true,
+    hAxis: {
+      title: 'Total Population',
+      minValue: 0,
+    },
+    vAxis: {
+      title: 'City',
+    },
+  }}
+  // For tests
+  rootProps={{ 'data-testid': '3' }}
+/>
+
             </div>
         )
     }

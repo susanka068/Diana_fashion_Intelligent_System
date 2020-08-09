@@ -33,24 +33,24 @@ export default function HomePage() {
                     <div className="col-lg-6" >
                    <Card style={{ maxWidth: '18rem' }}>
                     <Card.Body>
-                        <Card.Title>GO EXTRACTING</Card.Title>
+                        <Card.Title>Item List</Card.Title>
                         <Card.Text>
                         Some quick example text to build on the card title and make up the bulk of
                         the card's content.
                         </Card.Text>
-                        <Link to="/extract"><Button className="btn btn-primary mybtn" variant="primary">EXTRACT</Button></Link>
+                        <Link to="/products"><Button className="btn btn-primary mybtn" variant="primary">EXTRACT</Button></Link>
                     </Card.Body>
                     </Card>
                     </div>
                     <div className="col-lg-6" >
                     <Card style={{ maxWidth: '18rem' , margin:'5px' }}>
                     <Card.Body>
-                        <Card.Title>GO EXPLORING</Card.Title>
+                        <Card.Title>Analytics</Card.Title>
                         <Card.Text>
                         Some quick example text to build on the card title and make up the bulk of
                         the card's content.
                         </Card.Text>
-                        <Link><Button className="btn btn-primary mybtn" variant="primary">EXPLORE</Button></Link>
+                        <Link to="/analytics"><Button className="btn btn-primary mybtn" variant="primary">EXPLORE</Button></Link>
                     </Card.Body>
                     </Card>
                     </div>

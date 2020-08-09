@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Card ,Button , Accordion} from 'react-bootstrap'
+import {Card ,Button , Accordion , Table } from 'react-bootstrap'
 export class ProductIndividual extends Component {
     render() {
         const { title , image ,score } = this.props.data
