@@ -8,9 +8,10 @@ export class ProductIndividual extends Component {
             <Accordion>
             <Card>
                 <Card.Header>
-                <Card.Img src={image} style={{height : 'auto' , width: '140px'}}  ></Card.Img>
-                trendiness score : {score}
+                <Card.Img src={image} style={{height : 'auto' , width: '170px' , margin:'auto'}}  ></Card.Img>
+                
                 <Card.Title>{title}</Card.Title>
+                <Card.Text>trendiness score : {score}</Card.Text>
                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
                     <Button className="btn btn-primary mybtn" variant="primary">view details</Button>
                 </Accordion.Toggle>

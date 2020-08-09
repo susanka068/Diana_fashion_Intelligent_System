@@ -8,11 +8,11 @@ export class Analytics extends Component {
         console.log(dataArray)
         return (
             
-            <div>
+            <div >
                
 <Chart
-  width={'1300px'}
-  height={'1000px'}
+  width={'minmax(1300px,90%)'}
+  height={'900px'}
   chartType="BarChart"
   loader={<div>Loading Chart</div>}
   data={[
@@ -45,8 +45,8 @@ export class Analytics extends Component {
 />
 
 <Chart
-  width={'1300px'}
-  height={'1000px'}
+  width={'minmax(1300px,90%)'}
+  height={'900px'}
   chartType="LineChart"
   loader={<div>Loading Chart</div>}
   data={dataArray}
