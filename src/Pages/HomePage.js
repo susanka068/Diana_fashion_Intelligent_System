@@ -1,6 +1,5 @@
 import React from 'react'
 import { Button , Image ,Card } from 'react-bootstrap'
-import Logo from '../Img/logos/android-chrome-512x512.png'
 import Diana from '../Img/diana.png'
 import {Link} from 'react-router-dom'
 import '../index.css';
