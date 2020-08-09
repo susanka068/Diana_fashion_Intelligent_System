@@ -41,19 +41,19 @@ export class Analytics extends Component {
     ['sleeve',        null,       null,    null ,    null ,    null ,   null ,   null ,  null,    null ,     null ,   null,       null ,   null,      null,         63 ,       8 ,    null,  null,     null,          null,         null   ,],
     ['length',        null,       null,    null ,    null ,    null ,   null ,   null ,  null,    null ,     null ,   null,       null ,   null,      null,        null ,    null ,    5,    null,     null,          null,         null   ,],
     ['hem',           null,       null,    null ,    null ,    null ,   null ,   null ,  null,    null ,     null ,   null,       null ,   null,      null,        null ,    null ,    null,   4,      null,          null,         null   ,],
-    ['color',         null,       null,    null ,    null ,    null ,   null ,   null ,  null,    null ,     null ,   null,       null ,   null,      null,        null ,    null ,    null,   4,        2,             1,          null   ,],
-    ['pleat',         null,       null,    null ,    null ,    null ,   null ,   null ,  null,    null ,     null ,   null,       null ,   null,      null,        null ,    null ,    null,   4,        2,             1,           1   ,],
+    ['color',         null,       null,    null ,    null ,    null ,   null ,   null ,  null,    null ,     null ,   null,       null ,   null,      null,        null ,    null ,    null, null,        2,             1,          null   ,],
+    ['pleat',         null,       null,    null ,    null ,    null ,   null ,   null ,  null,    null ,     null ,   null,       null ,   null,      null,        null ,    null ,    null, null,     null,          null,           1   ,],
   ]}
   options={{
-    title: 'Population of Largest U.S. Cities',
+    title: 'Element distrubution Chart',
     chartArea: { width: '50%' },
     isStacked: true,
     hAxis: {
-      title: 'Total Population',
+      title: 'Attributes',
       minValue: 0,
     },
     vAxis: {
-      title: 'City',
+      title: 'Values',
     },
   }}
   // For tests
