@@ -11,8 +11,8 @@ export class Analytics extends Component {
             <div>
                
 <Chart
-  width={'900px'}
-  height={'700px'}
+  width={'1300px'}
+  height={'1000px'}
   chartType="BarChart"
   loader={<div>Loading Chart</div>}
   data={[
@@ -45,8 +45,8 @@ export class Analytics extends Component {
 />
 
 <Chart
-  width={'900px'}
-  height={'700px'}
+  width={'1300px'}
+  height={'1000px'}
   chartType="LineChart"
   loader={<div>Loading Chart</div>}
   data={dataArray}
