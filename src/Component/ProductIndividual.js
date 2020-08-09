@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import {Card ,Button , Accordion , Table } from 'react-bootstrap'
+import {Card ,Button , Accordion } from 'react-bootstrap'
 export class ProductIndividual extends Component {
     render() {
-        const { title , image ,score , detail } = this.props.data
-        const detail_string = JSON.stringify(detail) 
+        const { title , image ,score  } = this.props.data
+       // const detail_string = JSON.stringify(detail) 
         return (
             <Accordion>
             <Card>

@@ -9,26 +9,10 @@ export class Analytics extends Component {
         return (
             
             <div>
-                <Chart
-  width={'600px'}
-  height={'400px'}
-  chartType="LineChart"
-  loader={<div>Loading Chart</div>}
-  data={dataArray}
-  options={{
-    hAxis: {
-      title: 'Keywords',
-    },
-    vAxis: {
-      title: 'Apperance',
-    },
-  }}
-  rootProps={{ 'data-testid': '1' }}
-/>
-
+               
 <Chart
-  width={'600px'}
-  height={'500px'}
+  width={'900px'}
+  height={'700px'}
   chartType="BarChart"
   loader={<div>Loading Chart</div>}
   data={[
@@ -59,6 +43,24 @@ export class Analytics extends Component {
   // For tests
   rootProps={{ 'data-testid': '3' }}
 />
+
+<Chart
+  width={'900px'}
+  height={'700px'}
+  chartType="LineChart"
+  loader={<div>Loading Chart</div>}
+  data={dataArray}
+  options={{
+    hAxis: {
+      title: 'Keywords',
+    },
+    vAxis: {
+      title: 'Apperance',
+    },
+  }}
+  rootProps={{ 'data-testid': '1' }}
+/>
+
 
             </div>
         )
